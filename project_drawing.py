@@ -8,8 +8,6 @@ cap.set(3, frameWidth)
 cap.set(4, frameHeight)
 cap.set(10, 150)
 
-#myColors = [[5, 107, 0, 19, 255, 255],[133, 56, 0, 159, 156, 255],[57, 76, 0, 100, 255, 255], [90, 48, 0, 118, 255, 255]]
-#myColorValues = [[51, 153, 255],[255, 0, 255],[0, 255, 0],[255, 0, 0]]
 myColors=[[0,77,184,20,255,255], [52,71,88,91,203,178] , [14,83,186,83,255,255] , [85,50,163,177,148,255]] #green orange yellow blue
 myColorValues=[[35,93,230] , [52,114,62],[62,225,219], [203,215,99]]
 myPoints = []  ## [x , y , colorId ]
@@ -28,7 +26,6 @@ def findColor(img, myColors, myColorValues):
         if x != 0 and y != 0:
             newPoints.append([x, y, count])
         count += 1
-        # cv2.imshow(str(color[0]),mask)
     return newPoints
 
 
